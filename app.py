@@ -9,10 +9,7 @@ from PyPDF2 import PdfReader, PdfWriter
 from reportlab.platypus import Paragraph, Frame
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A4
-import os
-
-port = int(os.environ.get("PORT", 8501)) 
+from reportlab.lib.pagesizes import A4 
 
 
 def get_certificate_template():
